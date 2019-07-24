@@ -1,0 +1,16 @@
+<style>.box{width:6.8rem;margin:.4rem auto 0}.puzzle-wrap{width:100%;height:6.8rem;margin-bottom:.4rem;padding:0;background:#ccc}.puzzle{width:1.7rem;height:1.7rem;font-size:.4rem;background:#f90;text-align:center;line-height:1.7rem;border:1px solid #ccc;box-shadow:1px 1px 4px;text-shadow:1px 1px 1px #b9b4b4;cursor:pointer}.puzzle-empty{background:#ccc;box-shadow:inset 2px 2px 18px}</style>
+<div class="bui-page">
+    <header class="bui-bar">
+        <div class="bui-bar-left"> </div>
+        <div class="bui-bar-main">BUI拼图游戏-数据驱动</div>
+        <div class="bui-bar-right"> </div>
+    </header>
+    <main>
+        <div class="box">
+            <ul class="puzzle-wrap bui-fluid-4" b-template="page.tplGame(page.puzzles)">
+
+            </ul>
+            <button class="bui-btn warning round" b-click="page.render">重置游戏</button>
+        </div>
+    </main>
+</div>
